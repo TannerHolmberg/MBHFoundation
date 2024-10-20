@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .Information{
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+  }
+
+.header{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.subHeader{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyText{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+.left{
+    width:50%;
+    height: auto;
+    padding-left: 5%;
+}
+.right{
+    width: 50%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 400px;
+    height: 300px;
+    background-image: url('../pictures/Fentanyl1.png');
+    border-radius: 50%;
+    background-size: cover;
+}
+
+@media (max-width: 720px){
+    .Information{
+        background-image: url('../pictures/Fentanyl.jpg');
+        background-size: cover;
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+    .bodyText{
+        background-color: rgba(0,0,0,.6);
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+    }
+    .header{
+        background-color: rgba(0,0,0,.6);
+    }
+    .subHeader{
+        display: none;
+    }
+}

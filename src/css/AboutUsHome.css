@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.mainContainer{
+    height: auto;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #F77F00 50%, black 100%);
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
+.leftAboutUs{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.rightAboutUs{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid red;
+}
+
+.headerAboutUs{
+    width: 100%;
+    height: auto;
+    font-size: 36px;
+    margin-right: 150px;
+}
+
+.aboutUsBody{
+    width: 90%;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 30px;
+    font-weight:600;
+    margin-right: 100px;
+}
+
+.masonImage{
+    width: 450px;
+    height: 300px;
+    background-color: red;
+    border-radius: 20px;
+    background-image: url('../pictures/mason.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid black;
+}
+
+@media (max-width: 720px){
+    .leftAboutUs{
+        display: none;
+    }
+
+    .mainContainer{
+        background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #F77F00 100%);
+        color: white;
+        padding-top: 100px;
+        background-size: cover;
+        padding-bottom: 100px;
+    }
+    .rightAboutUs{
+        width: 100%;
+    }
+    .headerAboutUs{
+        width: 100%;
+        display: felx;
+        justify-content: left;
+    }
+
+    .headerAboutUs h2{
+        width: 300px;
+    }
+    .aboutUsBody{
+        width: 90%;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+}

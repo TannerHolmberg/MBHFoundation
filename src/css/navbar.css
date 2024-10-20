@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: finlandica;
+  }
+
+a{text-decoration: none;}
+a:visited { text-decoration: none; color: inherit;}
+
+.navbar {
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+.navLinksUL{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none; /*removes dots*/
+    position: relative;
+}
+
+.hamburgerContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.hamburger span{
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(12px,2px);
+    border-radius: 10px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(16px, -9px);
+    border-radius: 10px;
+}
+
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: #F77F00;
+}
+
+.dropdownMenu{
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add opacity transition */
+    opacity: 0; /* Hidden initially */
+    pointer-events: none; /* Prevents interaction when hidden */
+}
+
+.dropdownMenu.active{
+    left: 0; /* Move into view */
+    opacity: 1; /* Fully visible */
+    pointer-events: auto; /* Allows interaction when visible */
+}
+
+
+.navLinksULDD{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none; /*removes dots*/
+    position: relative;
+}
+
+.navLinksLIDD{
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+}
+
+.navLinksLIDD::before{
+    content: '';
+    position: absolute; /* Position it absolutely relative to the anchor */
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #F77F00; /* Background transition color */
+    transition: width 0.2s ease-out; /* Smooth left-to-right transition */
+    z-index: -1; /* Ensure the text stays above the background */
+    /*clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);*/
+}
+
+.navLinksLIDD:hover::before{
+    width: 100%;
+}
+
+.navLinksLI{
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    height: 100%;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinksLI:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.navLinks{
+    text-decoration: none;
+}
+
+.navLinksLI::before{
+    content: '';
+    position: absolute; /* Position it absolutely relative to the anchor */
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #F77F00; /* Background transition color */
+    transition: width 0.2s ease-out; /* Smooth left-to-right transition */
+    z-index: -1; /* Ensure the text stays above the background */
+    /*clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);*/
+}
+
+.navLinksLI:hover::before{
+    width: 100%;
+}
+
+.logoContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10%;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../pictures/MBHlogo.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center;
+}
+
+
+@media (max-width: 720px){
+    .navLinksUL{
+        display: none;
+    }
+    .logoContainer h1{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top: 0px;
+        background-color: transparent;
+    }
+    .hamburger span{
+        background-color: black;
+    }
+}
+
+@media (min-width: 721px) {
+    .hamburgerContainer{
+        display: none;
+    }
+    .dropdownMenu{
+        display: none;
+    }
+}

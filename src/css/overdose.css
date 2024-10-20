@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: finlandica;
+  }
+
+  .overdoseContainer{
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #F77F00 50%, black 100%);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+  }
+
+  .resourcesTitle{
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 150px;
+  }
+
+  .resourcesTitle h2{
+    border: 2px solid black;
+    color: black;
+    margin-left: 50px;
+  }
+
+  .resourcesBody{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 3;
+  }
+
+  .C1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-around;
+  }
+
+  .cardR1{
+    width: 95%;
+    height: 250px;
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .cardR1 img{
+    height: 200px;
+    width: 100%;
+  }
+
+  .logo1{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1{
+    color: white;
+  }
+
+  .cardHeaderR{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .h2{
+    color: rgb(36, 98, 234);
+  }
+
+  .cardR2{
+    width: 90%;
+    height: 300px;
+    border: 2px solid rgb(36, 98, 234);
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .logo2{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo2 img{
+    height: 250px;
+    width: auto;
+  }
+
+  .cardR3{
+    width: 90%;
+    height: 200px;
+    border: 2px solid turquoise;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .logo3{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h3{
+    color: turquoise;
+  }
+
+  .logo3 img{
+    height: 150px;
+    width: 100%;
+  }
+
+  .cardR4{
+    width: 80%;
+    height: 350px;
+    border: 2px solid blue;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .logo4{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h4{
+    font-size: 30px;
+    color: blue;
+  }
+
+  .logo4 img{
+    height: 250px;
+    width: 250px;
+  }
+
+  .cardR5{
+    width: 85%;
+    height: 375px;
+    border: 2px solid darkslategray;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .h5{
+    font-size: 30px;
+    color: white;
+  }
+
+  .logo5{
+    width: 100%;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo5 img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .cardR6{
+    width: 75%;
+    height: 200px;
+    border: 2px solid yellow;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .logo6{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo6 img{
+    width: 170px;
+    height: 125px;
+  }
+
+  .h6{
+    color: yellowgreen;
+  }
+
+  .cardR7{
+    width: 90%;
+    height: 285px;
+    border: 2px solid black;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .logo7{
+    height: 235px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .logo7 img{
+    height: 200px;
+    width: 200px;
+  }
+
+  .cardR8{
+    width: 95%;
+    height: 300px;
+    border: 2px solid grey;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .logo8{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo8 img{
+    height: 230px;
+    width: 90%;
+  }
+  .h8{
+    font-size: 25px;
+    color: grey;
+  }

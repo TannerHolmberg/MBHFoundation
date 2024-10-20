@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .splashpage{
+    width: 100vw;
+    height: 500px;
+    background-image: url('../pictures/heroImage.png');
+    background-size:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: black solid 2px;
+  }
