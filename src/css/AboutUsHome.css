@@ -7,57 +7,60 @@
 .mainContainer{
     height: auto;
     width: 100vw;
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #F77F00 50%, black 100%);
+    background-color: #121212;
     display: flex;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-}
-
-.leftAboutUs{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 200px;
     align-items: center;
-    padding-top: 25px;
-}
+    padding-top: 80px;
 
-.rightAboutUs{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border:1px solid red;
 }
 
 .headerAboutUs{
-    width: 100%;
+    width: auto;
     height: auto;
     font-size: 36px;
     margin-right: 150px;
 }
 
 .aboutUsBody{
-    width: 90%;
+    color: white;
+    width: 700px;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
     font-size: 18px;
     line-height: 26px;
-    padding-bottom: 30px;
-    font-weight:600;
     margin-right: 100px;
+    position: absolute;
+    bottom: -200px;
+    right: -600px;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsBodyIn{
+    width: 99%;
+    height: 99%;
+    background-color: #282828;
+    border-radius: 20px;
 }
 
 .masonImage{
+    position: relative;
     width: 450px;
     height: 300px;
-    background-color: red;
     border-radius: 20px;
     background-image: url('../pictures/mason.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border: 5px solid black;
+    margin-bottom: 300px;
+    z-index: 1;
 }
 
 @media (max-width: 720px){

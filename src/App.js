@@ -4,6 +4,8 @@ import Information from './js/information';
 import AboutUsHome from './js/AboutUsHome';
 import StatsHome from './js/statsHome';
 import Overdose from './js/overdose';
+import ContactUs from './js/ContactUs';
+import CallToAction from './js/CallToAction';
 import './App.css';
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       <Information />
       <AboutUsHome />
       <StatsHome />
+      <CallToAction />
       <Overdose />
+      <ContactUs />
     </div>
   );
 }

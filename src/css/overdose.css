@@ -8,28 +8,34 @@
   .overdoseContainer{
     width: 100vw;
     height: auto;
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #F77F00 50%, black 100%);
+    background-color: #121212;
     display: flex;
     flex-direction: column;
-    padding-bottom: 200px;
+    padding-top: 80px;
   }
 
   .resourcesTitle{
     width: 100%;
-    height: 100px;
+    height: 200px;
     color: white;
     font-weight: 600;
     display: flex;
     justify-content: left;
-    align-items: center;
     font-size: 50px;
-    margin-top: 150px;
   }
 
   .resourcesTitle h2{
-    border: 2px solid black;
-    color: black;
+    color: White;
     margin-left: 50px;
+  }
+
+  .resourcesTitle p{
+    height: 100px;
+    font-size: 18px;
+    line-height: 26px;
+    width: 50%;
+    background-color: #282828;
+    margin-top: 100px;
   }
 
   .resourcesBody{
@@ -38,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-grow: 3;
   }
 
   .C1{
@@ -47,18 +52,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    column-gap: 10px;
     justify-content: space-around;
   }
 
   .cardR1{
     width: 95%;
     height: 250px;
-    border: 2px solid purple;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     overflow: hidden;
+    border: 3px solid red;
+    background-color: #282828;
+  }
+
+  #ARG{
+    width: 95%;
+    height: auto;
+    padding: 3px 3px 3px 3px;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: linear-gradient(125deg, #A100FFFF 0%, #7C6CE2FF 48%, #FF71B5FF 100%);
   }
 
   .cardR1 img{
@@ -86,6 +100,7 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    background-color: #282828;
   }
 
   .h2{
@@ -98,6 +113,7 @@
     border: 2px solid rgb(36, 98, 234);
     cursor: pointer;
     overflow: hidden;
+    background-color: #282828;
   }
 
   .logo2{
@@ -119,6 +135,7 @@
     border: 2px solid turquoise;
     cursor: pointer;
     overflow: hidden;
+    background-color: #282828;
   }
 
   .logo3{
@@ -144,6 +161,7 @@
     border: 2px solid blue;
     cursor: pointer;
     overflow: hidden;
+    background-color: #282828;
   }
 
   .logo4{
@@ -170,6 +188,7 @@
     border: 2px solid darkslategray;
     cursor: pointer;
     overflow: hidden;
+    background-color: #282828;
   }
 
   .h5{
@@ -196,6 +215,7 @@
     border: 2px solid yellow;
     cursor: pointer;
     overflow: hidden;
+    background-color: #282828;
   }
 
   .logo6{
@@ -221,6 +241,7 @@
     border: 2px solid black;
     cursor: pointer;
     overflow: hidden;
+    background-color: #282828;
   }
 
   .logo7{
@@ -251,6 +272,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #282828;
   }
 
   .logo8 img{
@@ -260,4 +282,14 @@
   .h8{
     font-size: 25px;
     color: grey;
+  }
+
+  .blurryCircle{
+    width: 200px;
+    height: 200px;
+    background-color: #F77F00; /* Change to your desired color */
+    border-radius: 50%; /* Makes it a perfect circle */
+    box-shadow: 0px 0px 50px 30px rgba(247, 127, 0, 0.6); /* Blur effect */
+    transform: scaleX(1.2) scaleY(0.9) rotate(15deg); /* Irregular shape */
+    filter: blur(50px); /* Extra blur */
   }

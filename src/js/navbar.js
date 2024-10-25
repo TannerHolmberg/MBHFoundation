@@ -18,6 +18,7 @@ const handleClick = () => {
 
 const Navbar = () => {
     return (  
+        <div className='navbarUnderbar'>
         <nav className="navbar">
             <div className="hamburgerContainer">
             <div className="hamburger" onClick = {handleClick}>
@@ -61,6 +62,7 @@ const Navbar = () => {
                 <div className='logo'></div>
             </div>
         </nav>
+        </div>
 
     );
 }
