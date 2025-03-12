@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MBHFoundation/static/css/main.b3f0cc53.css",
+    "main.css": "/MBHFoundation/static/css/main.ef00cfb0.css",
     "main.js": "/MBHFoundation/static/js/main.826b4516.js",
     "static/js/453.56be1765.chunk.js": "/MBHFoundation/static/js/453.56be1765.chunk.js",
     "static/media/gregAbbot.png": "/MBHFoundation/static/media/gregAbbot.37f25211853ebb91fe8a.png",
@@ -23,12 +23,12 @@
     "static/media/Shatterproof.png": "/MBHFoundation/static/media/Shatterproof.38c4debad7e54fb2c745.png",
     "static/media/ARG.png": "/MBHFoundation/static/media/ARG.d44f6e4bda2579660231.png",
     "index.html": "/MBHFoundation/index.html",
-    "main.b3f0cc53.css.map": "/MBHFoundation/static/css/main.b3f0cc53.css.map",
+    "main.ef00cfb0.css.map": "/MBHFoundation/static/css/main.ef00cfb0.css.map",
     "main.826b4516.js.map": "/MBHFoundation/static/js/main.826b4516.js.map",
     "453.56be1765.chunk.js.map": "/MBHFoundation/static/js/453.56be1765.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3f0cc53.css",
+    "static/css/main.ef00cfb0.css",
     "static/js/main.826b4516.js"
   ]
 }
