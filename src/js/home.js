@@ -9,7 +9,6 @@ import CallToAction from './CallToAction';
 import { useState, useEffect } from 'react';
 
 const Home = () => {
-  useState
     return ( 
     <div className="App">
       <Navbar />
