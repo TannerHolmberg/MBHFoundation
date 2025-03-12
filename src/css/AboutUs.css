@@ -1,0 +1,246 @@
+.OurMission{
+    height: 700px;
+    background-color: #282828;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourMissionText{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.familyImage{
+    background-image: url("../pictures/gregAbbot.png");
+    background-size:cover;
+}
+
+.OurMission h1{
+    color: #F77F00;
+    font-size: 70px;
+    text-align: left;
+}
+
+.OurMission p{
+    color: #e8e8e8;
+    font-size: 20px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.familyImageBackground{
+    height: 500px;
+    width: 400px;
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.familyImage{
+    background-color: #121212;
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: -10px;
+    left: -10px
+}
+
+.PeopleContainer{
+    background-color: #383838;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.pfp{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bradImg{
+    background-image: url('../pictures/brad.png');
+    background-size: cover;
+}
+
+#momImg{
+    background-image: url('../pictures/mom.png');
+    background-size: cover;
+}
+
+#tannerImg{
+    background-image: url('../pictures/tanner.png');
+    background-size: cover;
+}
+
+.pfpName{
+    font-size: 70px;
+    color: #F77F00;
+}
+
+.pfpDescription{
+    color: #e8e8e8;
+    text-align: left;
+    width: 400px;
+    font-size: 20x;
+}
+
+#staceyContainer{
+    background-color: #282828;
+}
+
+.pfpImage{
+    width: 295px;
+    height: 295px;
+    border-radius: 50%;
+    background-color: #121212;
+}
+
+.OurStory{
+    height: auto;
+    padding: 50px 0 50px 0;
+    background-color: #282828;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+.videoBorder{
+    width: 650px;
+    height: 363px;
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    margin-top: 50px;
+}
+
+.videoBorder iframe {
+    width: 645px;
+    height: 355px;
+    border: none; /* Remove border */
+  }
+
+  .OurStoryDescription{
+    width: 40%;
+    height: 360px;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .ourStoryHeader{
+    font-size: 70px;
+    color: #F77F00;
+    text-align: left;
+  }
+
+  .ourStoryBody{
+    color: #e8e8e8;
+    font-size: 20x;
+    text-align: left;
+  }
+
+
+
+  @media (max-width: 900px){
+    .OurMission{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .familyImageBackground{
+        margin-top: 50px;
+        height: 400px;
+        width: 300px;
+    }
+
+    .familyImage{
+        height: 400px;
+        width: 300px;
+    }
+
+    .ourMissionText{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .PeopleContainer{
+        flex-direction: column;
+        height: auto;
+        padding: 50px 0 50px 0;
+    }
+
+    #staceyContainer{
+        flex-direction: column-reverse;
+
+    }
+
+    .pfpName{
+        text-align: center;
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .pfpText{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .OurStory{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 0 50px 0;
+        height: auto;
+    }
+
+    .OurStoryDescription{
+        width: 90%;
+        height: auto;
+    }
+
+    .videoBorder{
+        width: calc(90% + 2px);
+        height: 263px;
+        background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px 5px 5px;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .videoBorder iframe {
+        width: calc(100% - 2px);
+        height: 255px;
+        border: none; /* Remove border */
+      }
+    
+    
+}

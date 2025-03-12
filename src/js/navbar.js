@@ -1,17 +1,19 @@
 import '../css/navbar.css'
 
+import { NavLink } from 'react-router-dom';
+
 const handleClick = () => {
     const hamburger = document.querySelector(".hamburger");
     const dropdown = document.querySelector(".dropdownMenu");
 
-    if(document.body.style.overflow === "hidden"){
-        document.body.style.overflow = "auto";
-    }
-    else{
-        document.body.style.overflow = "hidden";
-    }
-
     // Toggle the 'active' class on both the hamburger and dropdown menu
+    hamburger.classList.toggle("active");
+    dropdown.classList.toggle("active");
+}
+
+const handleRedirection = () => {
+    const hamburger = document.querySelector(".hamburger");
+    const dropdown = document.querySelector(".dropdownMenu");
     hamburger.classList.toggle("active");
     dropdown.classList.toggle("active");
 }
@@ -30,31 +32,31 @@ const Navbar = () => {
             <div className='dropdownMenu' id="dropdown">
             <ul className="navLinksULDD">
                 <li className = "navLinksLIDD">
-                    <a className="navLinks" href="#" class="active">Home</a>
+                    <NavLink onCLick={handleRedirection} className="navLinks" to="/MBHFoundation">Home</NavLink>
                 </li>
                 <li className = "navLinksLIDD">
-                    <a className="navLinks" href="#" class="active">About Us</a>
+                    <NavLink onCLick={handleRedirection} className="navLinks" to="/AboutUs">About Us</NavLink>
                 </li>
                 <li className = "navLinksLIDD">
-                    <a className="navLinks" href="#" class="active">Memorial</a>
+                    <NavLink onCLick={handleRedirection} className="navLinks" to="/Memorial">Memorial</NavLink>
                 </li>
                 <li className = "navLinksLIDD">
-                    <a className="navLinks" href="#" class="active">Donate</a>
+                    <a  onCLick={handleRedirection} className="navLinks" href="#">Donate</a>
                 </li>
             </ul>
             </div>
             <ul className="navLinksUL">
                 <li className = "navLinksLI">
-                    <a className="navLinks" href="#" class="active">Home</a>
+                    <NavLink className="navLinks" to="/MBHFoundation">Home</NavLink>
                 </li>
                 <li className = "navLinksLI">
-                    <a className="navLinks" href="#" class="active">About Us</a>
+                    <NavLink className="navLinks" to="/AboutUs">About Us</NavLink>
                 </li>
                 <li className = "navLinksLI">
-                    <a className="navLinks" href="#" class="active">Memorial</a>
+                    <NavLink className="navLinks" to="/Memorial">Memorial</NavLink>
                 </li>
                 <li className = "navLinksLI">
-                    <a className="navLinks" href="#" class="active">Donate</a>
+                    <a className="navLinks" href="#">Donate</a>
                 </li>
             </ul>
             <div className='logoContainer'>

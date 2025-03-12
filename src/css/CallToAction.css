@@ -1,24 +1,24 @@
 .callToActionContainer{
     height: auto;
-    width: 100vw;
-    background-color: #121212;
+    width: 100%;
+    background-color: #282828;
     display: flex;
     justify-content: left;
     align-items: center;
     position: relative;
     z-index: 1;
+    padding: 100px 0 100px 0;
 }
 
 #callToActionOverlay{
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(247, 127, 0, .5);
 }
 
 #callToActionCard{
-    width: 450px;
-    height: 300px;
-    background-color: #3f3f3f;
+    width: 500px;
+    height: 400px;
     margin-left: 10%;
     color: white;
     display: flex;
@@ -28,26 +28,14 @@
     position: relative;
 }
 
-#callToActionCard::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;  /* Same width as the button */
-    height: 100%;
-    padding: 6px 3px 3px 3px;
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
-    z-index: -1;
-}
-
 #callToActionCard h2{
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: left;
+    font-size: 50px;
+    color: #FF7000FF
 }
 
 #callToActionCard p{
@@ -55,9 +43,10 @@
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 15px;
     padding: 0 10px 0 10px;
+    font-size: 20px;
+    text-align: left;
 }
 
 #callToActionimg{
@@ -65,21 +54,7 @@
     width: 500px;
     background-image: url('../pictures/lestWeForget.jpg');
     background-size: contain;
-}
-
-#backlight{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    width: 80%;
-    height: 300px;
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
-    border-radius: 50%;
-    filter: blur(150px);
-    z-index: -2;
+    border: solid 3px #FF7000FF;
 }
 
 .callToActionButton{
@@ -89,9 +64,17 @@
     color: white;
     cursor: pointer;
     position: relative;
-    height: 50px;
-    width: 100px;
+    height: 100px;
+    width: 150px;
     z-index: 1;
+    transition: box-shadow 0.3s ease;
+}
+
+.callToActionButton:hover{
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.2),
+        0 0 20px 10px rgba(255, 120, 20, 0.4),
+        0 0 40px 20px rgba(255, 100, 0, 0.2);
 }
 
 .callToActionButton::before{
@@ -106,4 +89,35 @@
     background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
     background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
     z-index: -1;
+}
+
+@media (max-width: 720px){
+    .callToActionContainer{
+        background-color: #282828;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #callToActionCard{
+        margin-left: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #callToActionCard h2{
+        width: 90%;
+        font-size: 40px;
+    }
+
+    #callToActionCard p{
+        width: 90%;
+
+    }
+
+    #callToActionimg{
+        width: 80%;
+        height: 300px;
+        background-size: cover;
+    }
 }

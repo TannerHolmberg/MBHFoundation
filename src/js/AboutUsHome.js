@@ -1,13 +1,15 @@
 import '../css/AboutUsHome.css'
-
+import mason from '../pictures/familyImg.jpeg'
 const AboutUsHome = () => {
     return ( 
         <div className='mainContainer'>
-            <div className='headerAboutUs'></div>
-                <div className="masonImage">
-                <div className="aboutUsBody"><div className='aboutUsBodyIn'><h2>OUR STORY</h2><br></br><p>We are the Holmbergs, a normal middle-class family of four. Until recently, we had never experienced drug abuse in our family. However, our lives were forever changed when our oldest son, Mason Bradley Holmberg, became addicted to drugs during college. <br></br><br></br> Despite our efforts to help him through multiple rehab stints and counseling, Mason tragically lost his life to fentanyl poisoning. This heartbreaking experience has fueled our mission to raise awareness about the dangers of fentanyl and addiction. We share Mason's story to honor his memory and prevent other families from facing the same devastating loss.</p></div></div>
-                </div>
-                
+                <img src={mason} alt="Picture of Mason Bradley Holmberg"></img>
+                <div className="aboutUsBody">
+                            <h2>OUR STORY</h2>
+                            <p>
+                            We were an ordinary family of four until fentanyl tore us apart. Our son Mason thrived until college, where addiction took hold. Despite rehab and counseling, he was poisoned by fentanyl—a tragedy that blindsided our middle-class family. Now, we share Mason's story to save others from our heartbreak and honor the son we couldn't save.
+                            </p>
+                        </div>
         </div>
      );
 }

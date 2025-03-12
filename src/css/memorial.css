@@ -1,0 +1,132 @@
+body{
+    background-color: #121212;
+}
+
+#memorialTitle{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    background-image: url('../pictures/candles.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#memorialTitle h1{
+    color: white; /* Make text color transparent */
+    background-color: rgba(0,0,0,.4);
+    
+}
+
+#cardContainer{
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 3px solid #F77F00;
+}
+
+#memorialCardBackground{
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+#memorialCardForeground{
+    width: 395px;
+    height: 495px;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imageCont{
+    width: 380px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 20px;
+    background-image: url(../pictures/mason.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 5px;
+    border: 1px solid white;
+}
+
+#nameCont{
+    margin-top: 20px;
+    color:white;
+}
+
+#dateCont{
+    color: white;
+}
+
+#storyCont{
+    height: 150px;
+    width: 380px;
+    overflow-y: scroll;
+    color: white;
+    margin-top: 20px;
+}
+
+#storyCont::-webkit-scrollbar {
+    display: none;
+}
+
+.pagination{
+    width: 100%;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20% 0 20%;
+}
+
+.paginationButton{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.paginationButtonOutline{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+}
+
+.pageCounter{
+    width: 100px;
+    height: 50px;
+    background-color: #121212;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageCounterBorder{
+    width: 105px;
+    height: 55px;
+    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

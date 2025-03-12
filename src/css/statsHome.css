@@ -12,22 +12,27 @@
     padding-top: 80px;
     padding-bottom: 80px;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .CardContainer{
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .statsTitle{
     width: 100%;
     height: 100px;
-    font-size: 32px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,9 +42,10 @@
 }
 
 .statsTitle h2{
-    color: white;
+    color: #F77F00;
     padding:20px;
     border-radius: 20px;
+    font-size: 60px;
 }
 
 .statoutline{
@@ -57,8 +63,6 @@
     height: 400px;
     background-color: #282828;
     border-radius: 20px;  
-    position: relative;
-    z-index: 1;
 }
 
   .statHeader{
@@ -93,6 +97,25 @@
 
   @media (max-width: 720px){
     .statsHomeContainer{
-        background: linear-gradient(to bottom, #F77F00 0%, rgb(0,0,0) 50%, #F77F00 100%);
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #121212;
+    }
+
+    .CardContainer{
+      flex-direction: row;
+      overflow-x: scroll;
+      justify-content: space-evenly;
+      height: 500px;
+      width: 100%;
+      padding-left: 30px;
+    }
+
+    .statoutline{
+      margin-right: 100px;
+    }
+
+    .statsTitle{
+      margin-bottom: 0;
     }
   }

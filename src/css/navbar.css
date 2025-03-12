@@ -7,16 +7,20 @@
     font-family: finlandica;
   }
 
+  body {
+    overflow-x: hidden;
+}
+
 a{text-decoration: none;}
 a:visited { text-decoration: none; color: inherit;}
 
 .navbarUnderbar{
-    height: auto;
-    width: auto;
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
-    padding-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 105px;
+    width: 100%;
+    background-color: #F77F00;
 }
 
 .navbar {
@@ -54,11 +58,14 @@ a:visited { text-decoration: none; color: inherit;}
     justify-content: space-evenly;
     cursor: pointer;
     margin-left: 20px;
-    z-index: 1;
+    z-index: 2;
+    position: fixed;
 }
 
 .hamburger span{
+    color: #F77F00;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -78,13 +85,14 @@ a:visited { text-decoration: none; color: inherit;}
 .line{
     width: 100%;
     height: 5px;
-    background-color: #F77F00;
+    color: #F77F00;
 }
 
 .dropdownMenu{
     position: fixed;
     top: 0;
     left: -250px; /* Initially hidden off-screen */
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,6 +215,12 @@ a:visited { text-decoration: none; color: inherit;}
 
 
 @media (max-width: 720px){
+    .navbarUnderbar{
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .navLinksUL{
         display: none;
     }
@@ -219,7 +233,10 @@ a:visited { text-decoration: none; color: inherit;}
         background-color: transparent;
     }
     .hamburger span{
-        background-color: black;
+        background-color: #F77F00;
+    }
+    .logoContainer{
+        display: none;
     }
 }
 

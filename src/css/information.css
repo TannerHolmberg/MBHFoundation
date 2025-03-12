@@ -4,129 +4,83 @@
     box-sizing: border-box;
   }
 
-  .topBar{
-    height: auto;
-    width: 100%;
-    padding-top: 3px;
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
-  }
-
   .Information{
     width: 100vw;
-    height: auto;
+    height: 600px;
     background-color: #121212;
     color: white;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    z-index: 1;
   }
 
-  .blurrBall{
-    position: absolute;
-    bottom: -300px;
-    left: -400px;
-    width: 80%;
-    height: 300px;
-    border-radius: 50%;
-    z-index: -1;
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
-    filter: blur(100px);
-  }
-
-  #outline1{
-    width: auto;
-    height: auto;
-    padding: 3px 3px 3px 3px;
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
-    margin-top: 80px;
-    z-index: 1;
+  #infoBackground{
+    width: 400px;
+    height: 400px;
 }
 
 .header{
-    height: auto;
+    height: 150px;
     width: 100%;
-    background-color: #282828;
     display: flex;
-    justify-content: center;
+    color: #FF7000FF;
     align-items: center;
     font-size: 40px;
     padding-top: 20px;
-    z-index: 1;
+    text-align: right;
 }
 
 .subHeader{
-    background-color: #282828;
     width: 100%;
-    height: auto;
+    height: 50px;
     font-size: 20px;
     display: flex;
-    justify-content: center;
+    text-align: right;
     align-items: center;
-    z-index: 1;
+    justify-content: right;
+}
+
+.subHeader h4{
+    display: flex;
+    justify-content: right;
+    background-color: #FF7000FF;
+    text-align: right;
 }
 
 .bodyText{
     width: 100%;
-    height: auto;
+    height: 200px;
     font-size: 18px;
+    display: flex;
+    text-align: right;
+    align-items: center;
     line-height: 26px;
     padding-bottom: 30px;
     z-index: 1;
-    background-color: #282828FF;
     padding: 0 5px 5px 5px;
 }
 
-.left{
-    width:50%;
-    height: auto;
-    padding-left: 5%;
-}
-
-.right{
+.infoImage{
     width: 50%;
-    height: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image{
-    width: 400px;
-    height: 300px;
-    background-image: url('../pictures/Fentanyl1.png');
-    border-radius: 50%;
+    height: 500px;
+    background-image: url('../pictures/pills.jpeg');
     background-size: cover;
-    z-index: 1;
+    border: solid 2px #FF7000FF;
+    border-radius: 10px;
+
 }
 
 @media (max-width: 720px){
     .Information{
-        background-image: url('../pictures/Fentanyl.jpg');
-        background-size: cover;
+        flex-direction: column;
+        padding-bottom: 100px;
+
+        height: 900px
     }
-    .right{
-        display: none;
-    }
-    .left{
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 50px;
-    }
-    .bodyText{
-        background-color: rgba(0,0,0,.6);
-        padding-bottom: 0px;
-        margin-bottom: 20px;
-    }
-    .header{
-        background-color: rgba(0,0,0,.6);
-    }
-    .subHeader{
-        display: none;
+
+    .infoImage{
+        width: 80%;
+        height: 300px
     }
 }

@@ -7,10 +7,27 @@
   .splashpage{
     width: 100vw;
     height: 500px;
-    background-image: url('../pictures/heroImage.png');
-    background-size:auto;
+    background-image: url('../pictures/pheonix.jpeg');
+    background-size:cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: black solid 2px;
+    flex-direction: column;
+    font-size: 30px;
+    color: white;
   }
+
+  @media (max-width: 720px){
+    .splashpage h1{
+      font-size: 20px;
+    }
+    .splashpage h3{
+      font-size: 15px;
+    }
+}
+
+@media (min-width: 721px) {
+    
+}

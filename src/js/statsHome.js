@@ -4,6 +4,7 @@ import { PieChart } from '@mui/x-charts';
 import { BarChart, barElementClasses } from '@mui/x-charts';
 import { axisClasses } from '@mui/x-charts/ChartsAxis';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useEffect, useState } from 'react';
 
 const theme = createTheme({
     typography: {
@@ -13,9 +14,10 @@ const theme = createTheme({
   });
 
 const StatsHome = () => {
+
     return ( 
         <div className="statsHomeContainer">
-            <div className="statsTitle"><h2>Facts and Statistics</h2></div>
+            <div className="statsTitle"><h2>STATISTICS</h2></div>
             <div className="CardContainer">
             <div className='statoutline'>
             <div className="stat1">
@@ -102,37 +104,7 @@ const StatsHome = () => {
             </div>
             </div>
 
-            <div className='statoutline'>
-            <div className="stat1">
-                <div className="statHeader"><h3>Treatment Success Rates</h3></div>
-                <BarChart
-                sx={(theme) => ({
-                    [`.${axisClasses.root}`]: {
-                      [`.${axisClasses.tick}, .${axisClasses.line}`]: {
-                        stroke: 'white',
-                        strokeWidth: 3,
-                      },
-                      [`.${axisClasses.tickLabel}`]: {
-                        fill: 'white',
-                        fontSize: '50px',
-                      },
-                    },
-                  })}
-                xAxis={[{ scaleType: 'band', data: ['18-24', '25-34', '35-44', '45-54', '55+'] }]}
-                series={[
-                    {
-                      data: [60, 75, 80, 70, 50], // This should have values for all xAxis categories
-                      label: 'Awareness (%)', // Optional: a label for the series
-                      max: 100,
-                      color: '#f57c00'
-                    },
-                  ]}
-                width={305}
-                height={360}
-                />
-                {/*<div className="statFooter"><p>This bar chart illustrates the levels of awareness about fentanyl and its dangers across various demographics. Each bar represents the percentage of individuals who recognize the risks associated with fentanyl use. By identifying gaps in knowledge, we can target our educational efforts effectively. Increased awareness is a vital step toward prevention, as it empowers individuals to make informed decisions and seek help when needed.</p></div>*/}
-            </div>
-            </div></div>
+          </div>
         </div>
      );
 }
